@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Instrument+Serif:regular,italic);
-@import url(https://fonts.googleapis.com/css?family=Sora:100,200,200,regular,500,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Sora:100,200,300,regular,500,600,700,800);
 
 /* Reset and color page */
 
@@ -33,7 +33,7 @@ p {
 	color: rgba(0, 0, 0, 1);
 	font-family: Instrument Serif;
 	font-style: italic;
-	font-weight: 200;
+	font-weight: 400;
 	text-align: left;
 	font-size: 28px;
 }
@@ -42,7 +42,7 @@ a {
 	text-decoration: none;
 	font-family: Sora;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 400;
 	text-align: center;
 	font-size: 28px;
 	letter-spacing: -1.5px;
@@ -111,7 +111,6 @@ a {
 	height: fit-content;
 	display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -126,10 +125,15 @@ a {
 }
 
 .footer_text{
+	color: rgb(0, 0, 0);
 	font-family: Sora;
 	font-size: 16px;
 	font-weight: 200;
 	letter-spacing: -0.5px;
+}
+
+.footer_text:hover{
+	text-decoration: underline;
 }
 
 /* Button design */
