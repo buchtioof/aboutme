@@ -81,7 +81,7 @@ a {
 	display: flex;
 	flex-direction: row;
 	justify-content: start;
-	column-gap: 1%;
+	column-gap: 2%;
 	align-items: start;
 }
 
