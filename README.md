@@ -1,7 +1,6 @@
-# aboutme
- me, myself and i
+#  me, myself and i
 
-[Le site](https://buchtioof.github.io/aboutme/)
+[Retrouvez le site ici](https://buchtioof.github.io/aboutme/)
 
  Mon site perso où j'experimenterais des trucs en front ou back.
  Site full HTML/CSS hosté sur Github Pages
