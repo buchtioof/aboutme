@@ -1,6 +1,6 @@
 #  me, myself and i
 
-[Retrouvez le site ici](https://buchtioof.github.io/aboutme/)
+[Retrouvez le site ici](https://buchtioof.github.io/)
 
  Mon site perso où j'experimenterais des trucs en front ou back.
  Site full HTML/CSS hosté sur Github Pages
