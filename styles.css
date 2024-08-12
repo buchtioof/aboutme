@@ -66,7 +66,7 @@ a {
 
 .hello {
 	position: relative;
-	width: 100%;
+	width: 110%;
 	height: fit-content;
 	display: flex;
 	flex-direction: column;
@@ -92,7 +92,7 @@ a {
 }
 
 .paragraph {
-	width: 100%;
+	width: 110%;
 	height: auto;
 }
 
