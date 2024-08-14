@@ -20,7 +20,7 @@
     height: 300px;
     background: linear-gradient(-20deg, #7028e4 0%, #e5b2ca 100%);
     background-size: 400% 400%;
-    filter: blur(80px);
+    filter: blur(200px);
     -webkit-animation: AnimationName 5s ease infinite;
     -moz-animation: AnimationName 5s ease infinite;
     animation: AnimationName 5s ease infinite;
