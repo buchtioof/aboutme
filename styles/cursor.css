@@ -1,0 +1,90 @@
+[class^="cursor"] {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.cursor-inner {
+    z-index: 9999;
+    width: 10px;
+    height: 10px;
+    background: #000;
+}
+
+.cursor-outer {
+    z-index: 0;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%);
+    background-size: 400% 400%;
+    filter: blur(80px);
+    -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+    transition: all .2s ease-out;
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+#navitem:hover~.cursor-outer {
+    width: 90px;
+    height: 90px;
+    background: #000;
+    mix-blend-mode: difference;
+}
+
+.content:hover~.cursor-outer {
+    opacity: 0;
+}
+
+body,
+button,
+a,
+h1,
+p,
+img {
+    cursor: none;
+}
