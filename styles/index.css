@@ -29,7 +29,7 @@ h1 {
 	font-style: normal;
 	font-weight: 200;
 	text-align: left;
-	font-size: 36px;
+	font-size: 52px;
 	letter-spacing: 0;
 }
 
@@ -48,18 +48,18 @@ a {
 	font-style: normal;
 	font-weight: 400;
 	text-align: center;
-	font-size: 28px;
+	font-size: 18px;
 	letter-spacing: -1.5px;
 }
 
 /* Content styling */
 
 .container {
-	position: fixed;
+	position: relative;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: min-content;
+	width: 30%;
 	height: fit-content;
 	display: flex;
 	flex-direction: column;
@@ -70,12 +70,13 @@ a {
 
 .hello {
 	position: relative;
-	width: 110%;
+	width: 100%;
 	height: fit-content;
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
 	align-items: start;
+	gap: 24px;
 }
 
 .world {
@@ -86,19 +87,67 @@ a {
 	flex-direction: row;
 	justify-content: start;
 	column-gap: 2%;
-	align-items: start;
+	align-items: baseline;
 }
 
 /* Resize mini earth*/
 .globe_emoji {
-	width: 36px;
-	height: 36px;
+	width: 42px;
+	height: 42px;
 }
 
 .paragraph {
-	width: 110%;
+	width: fit-content;
 	height: auto;
 }
+
+.links{
+	position: relative;
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	gap: 16px;
+}
+
+.button {
+	color: rgba(0, 0, 0, 1);
+	transition: all .5s;
+	width: fit-content;
+	height: fit-content;
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+	justify-content: center;
+	align-items: center;
+}
+
+.button:hover{
+	transform:translateY(10px) scale(1.2);
+	padding: 0 20px;
+}
+
+.github:hover {
+	color: rgb(0, 0, 0);
+}
+
+.dribbble:hover {
+	color: rgb(255, 30, 175);
+}
+
+.mail:hover {
+	color: rgb(255, 90, 30);
+}
+
+.linkedin:hover {
+	color: rgb(40, 0, 170);
+}
+
+.curriculum:hover {
+	color: rgb(50, 140, 0);
+}
+/* TEST
 
 .stack_buttons {
 	width: 110%;
@@ -140,7 +189,7 @@ a {
 	text-decoration: underline;
 }
 
-/* Button design */
+ Button design in test
 
 .button {
 	padding: 18px;
@@ -178,3 +227,5 @@ a {
 	background: linear-gradient(rgb(214, 255, 213) 0%, rgb(140, 255, 138) 100%);
 	color: rgb(50, 140, 0);
 }
+
+*/
