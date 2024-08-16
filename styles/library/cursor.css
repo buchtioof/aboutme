@@ -11,23 +11,23 @@
     z-index: 9999;
     width: 10px;
     height: 10px;
-    background: #000;
+    background: var(--monochrome);
 }
 
 .cursor-outer {
     z-index: 0;
     width: 300px;
     height: 300px;
-    background: linear-gradient(-20deg, #7028e4 0%, #e5b2ca 100%);
+    background: var(--cursor-blur);
     background-size: 400% 400%;
-    filter: blur(200px);
-    -webkit-animation: AnimationName 5s ease infinite;
-    -moz-animation: AnimationName 5s ease infinite;
-    animation: AnimationName 5s ease infinite;
+    filter: blur(150px);
+    -webkit-animation: Cursormove 5s ease infinite;
+    -moz-animation: Cursormove 5s ease infinite;
+    animation: Cursormove 5s ease infinite;
     transition: all .2s ease-out;
 }
 
-@-webkit-keyframes AnimationName {
+@-webkit-keyframes Cursormove {
     0% {
         background-position: 0% 50%
     }
@@ -41,7 +41,7 @@
     }
 }
 
-@-moz-keyframes AnimationName {
+@-moz-keyframes Cursormove {
     0% {
         background-position: 0% 50%
     }
@@ -55,7 +55,7 @@
     }
 }
 
-@keyframes AnimationName {
+@keyframes Cursormove {
     0% {
         background-position: 0% 50%
     }

@@ -5,57 +5,81 @@
     <title>About me</title>
     <meta name="author" content="Ramzi">
     <meta name="description" content="Mon protfolio">
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/cursor.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/library/cursor.css">
+    <link rel="stylesheet" href="/styles/library/navbar.css">
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css" />
 </head>
 
 <body>
-    <!--Cursor Part-->
+    <!-- Cursor divs -->
     <div class="cursor-outer"></div>
     <div class="cursor-inner"></div>
-    <script src="/js/cursor.js"></script>
+    <!-- Cursor divs -->
 
+    <!-- Root container using flex -->
     <div class=container>
-
+        <!-- Flex for paragraphs -->
         <div class="hello">
+            <!-- div using different font size and row flex-->
             <div class="world">
                 <h1>Hello world!</h1>
-                <img class="globe_emoji" src="img/globe.gif" alt="Earth globe in 3D rotating on itself">
+                <img class="globe_emoji" src="/img/globe.gif" alt="Earth globe in 3D rotating on itself">
             </div>
             <span class="paragraph">
                 <p>
-                    My name is Squickk. I'm currently studying design and technology at Sorbonne Paris Nord in Paris. I'm a design
-                    lover and a tech enthusiast.
+                    My name is Squickk. I'm currently studying design and technology at <a class="p_link" target="_blank" rel="noopener noreferrer" href="https://www.univ-spn.fr/">Sorbonne Paris Nord</a> in Paris.<br>
+                    I'm a design lover and a tech enthusiast.
                 </p>
             </span>
         </div>
 
+        <!-- Flex for links below intro paragraph -->
         <div class="links">
             <a class="button github" target="_blank" rel="noopener noreferrer" href="https://github.com/buchtioof">
-                <i class="ph ph-github-logo" style="color: rgb(0, 0, 0); font-size: 24px;"></i>
+                <i class="ph ph-github-logo" style="color: var(--github-color); font-size: 24px;"></i>
                 <span>Github</span>
             </a>
             <a class="button dribbble" target="_blank" rel="noopener noreferrer" href="https://dribbble.com/squickk">
-                <i class="ph ph-dribbble-logo" style="color: rgb(255, 30, 175); font-size: 24px;"></i>
-                <span>dribbble</span>
+                <i class="ph ph-dribbble-logo" style="color: var(--dribbble-color); font-size: 24px;"></i>
+                <span>Dribbble</span>
             </a>
             <a class="button linkedin" target="_blank" rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/i-663436272">
-                <i class="ph ph-linkedin-logo" style="color: rgb(40, 0, 170); font-size: 24px;"></i>
+                <i class="ph ph-linkedin-logo" style="color: var(--linkedin-color); font-size: 24px;"></i>
                 <span>Linkedin</span>
             </a>
             <a class="button mail" target="_blank" rel="noopener noreferrer" href="mailto:ramzi.idir@proton.me">
-                <i class="ph ph-at" style="color: rgb(255, 90, 30); font-size: 24px;"></i>
+                <i class="ph ph-at" style="color: var(--contact-color); font-size: 24px;"></i>
                 <span>Contact</span>
             </a>
         </div>
     </div>
 
+    <div class="navbar">
+        <a href="/">
+            <i class="ph-fill ph-house" style="color: var(--navicons-home); font-size: 24px;"></i>
+            <span>Home</span>
+        </a>
+        <a href="/work.html">
+            <i class="ph-bold ph-paint-brush" style="color: var(--navicons-color); font-size: 24px;"></i>
+            <span>Works</span>
+        </a>
+        <a id="theme-toggle" class="icon-only">
+            <i class="ph-bold ph-sun" id="icon-sun" style="color: var(--navicons-color); font-size: 24px;"></i>
+            <i class="ph-bold ph-moon" id="icon-moon" style="color: var(--navicons-color); font-size: 24px;"></i>
+        </a> <!-- Bouton icône seule -->
+    </div>
 
+    <!-- Scripts zone -->
+    <!-- Phosphor icons -->
     <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
-
+    <!-- Cursor custom -->
+    <script src="/js/cursor.js"></script>
+    <!-- Color scheme modifier -->
+    <script src="/js/scheme.js"></script>
+    <!-- Scripts zone -->
 
 </body>
 

@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Instrument+Serif:regular,italic);
 @import url(https://fonts.googleapis.com/css?family=Sora:100,200,300,regular,500,600,700,800);
+@import url("/styles/library/scheme.css");
+
+/* CSS for index page */
 
 /* Reset and color page */
 
@@ -14,17 +17,14 @@ span {
 }
 
 body {
-	background-color: rgba(255, 252, 249, 1);
+	background: var(--background);
+	color: var(--monochrome);
+	transition: background 0.3s, color 0.3s; /* Pour une transition douce */
 }
 
 /* Content settings */
 
-body {
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-}
-
 h1 {
-	color: rgba(0, 0, 0, 1);
 	font-family: Instrument Serif;
 	font-style: normal;
 	font-weight: 200;
@@ -34,7 +34,6 @@ h1 {
 }
 
 p {
-	color: rgba(0, 0, 0, 1);
 	font-family: Instrument Serif;
 	font-style: italic;
 	font-weight: 400;
@@ -42,7 +41,22 @@ p {
 	font-size: 28px;
 }
 
-a {
+.p_link {
+	color: var(--monochrome);;
+	font-family: Instrument Serif;
+	font-style: italic;
+	font-weight: 400;
+	text-align: left;
+	font-size: 28px;
+	text-decoration: none;
+	transition: all .5s;
+}
+
+.p_link:hover {
+	text-decoration: underline;
+}
+
+.button {
 	text-decoration: none;
 	font-family: Sora;
 	font-style: normal;
@@ -112,7 +126,7 @@ a {
 }
 
 .button {
-	color: rgba(0, 0, 0, 1);
+	color: var(--monochrome);
 	transition: all .5s;
 	width: fit-content;
 	height: fit-content;
@@ -129,7 +143,7 @@ a {
 }
 
 .github:hover {
-	color: rgb(0, 0, 0);
+	color: var(--monochrome);
 }
 
 .dribbble:hover {
