@@ -1,33 +1,33 @@
 /* Light mode scheme */
 :root {
-    --background: linear-gradient(120deg, rgb(255, 255, 255) 0%, rgb(255, 240, 220) 100%);
+    --background: linear-gradient(120deg, #ffffff 0%, #fff0dc 100%);
     --monochrome: rgb(0, 0, 0);
-    --cursor-blur: linear-gradient(-20deg, #7028e4 0%, #e5b2ca 100%);
+    --cursor-blur: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 
     /* Icons homepage colors */
-    --github-color: rgb(0, 0, 0);
-    --dribbble-color: rgb(255, 30, 175);
-    --linkedin-color: rgb(40, 0, 170);
-    --contact-color: rgb(255, 90, 30);
+    --github-color: #000000;
+    --dribbble-color: #ff1eaf;
+    --linkedin-color: #2800aa;
+    --contact-color: #ff5a1e;
 
     /* Nav colors */
-    --navicons-home: rgb(255, 72, 72);
-    --navicons-work: rgb(72, 200, 255);
-    --navicons-color: rgb(69, 69, 69);
+    --navicons-home: #ff4848;
+    --navicons-work: #48c8ff;
+    --navicons-color: #454545;
 }
 
 /* Dark mode scheme */
 [data-theme="dark"] {
-    --background: url(https://github.com/nicoth-in/Dark-Space-Theme/blob/master/img/background.gif?raw=true);
-    --monochrome: rgb(255, 255, 255);
-    --cursor-blur: linear-gradient(-20deg, #7028e4 0%, #e5b2ca 100%);
+    --background: #000000;
+    --monochrome: #ffffff;
+    --cursor-blur: linear-gradient(120deg, #94b4ff 0%, #d380f6 100%);
     
     /* Icons homepage colors */
-    --github-color: rgb(255, 255, 255);
-    --dribbble-color: rgb(255, 255, 255);
-    --linkedin-color: rgb(255, 255, 255);
-    --contact-color: rgb(255, 255, 255);
+    --github-color: #ffffff;
+    --dribbble-color: #ff81d3;
+    --linkedin-color: #9d7fff;
+    --contact-color: #ff946d;
     
     /* Nav colors */
-    --navicons-color: rgb(210, 210, 210);
+    --navicons-color: #d2d2d2;
 }

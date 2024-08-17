@@ -72,7 +72,7 @@
 #navitem:hover~.cursor-outer {
     width: 90px;
     height: 90px;
-    background: #000;
+    background: #000000;
     mix-blend-mode: difference;
 }
 
