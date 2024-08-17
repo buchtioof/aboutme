@@ -147,15 +147,15 @@ p {
 }
 
 .dribbble:hover {
-	color: rgb(255, 30, 175);
+	color: var(--dribbble-color)
 }
 
 .mail:hover {
-	color: rgb(255, 90, 30);
+	color: var(--contact-color);
 }
 
 .linkedin:hover {
-	color: rgb(40, 0, 170);
+	color: var(--linkedin-color);
 }
 
 .curriculum:hover {
