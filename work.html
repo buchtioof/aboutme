@@ -1,0 +1,66 @@
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>About me</title>
+    <meta name="author" content="Ramzi">
+    <meta name="description" content="Mon protfolio">
+    <meta name="robots" content="noindex">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/styles/work.css">
+    <link rel="stylesheet" href="/styles/library/cursor.css">
+    <link rel="stylesheet" href="/styles/library/navbar.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css" />
+</head>
+
+<body>
+    <!-- Cursor divs -->
+    <div class="cursor-outer"></div>
+    <div class="cursor-inner"></div>
+    <!-- Cursor divs -->
+
+    <!-- Root container using flex -->
+    <div class=container>
+        <!-- Flex for paragraphs -->
+        <div class="hello">
+            <!-- div using different font size and row flex-->
+            <div class="world">
+                <h1>On rentre pas je vous dis !</h1>
+                <img class="globe_emoji" src="/img/globe.gif" alt="Earth globe in 3D rotating on itself">
+            </div>
+            <span class="paragraph">
+                <p>
+                    Cette page est actuellement en cours de maintenance. <br>
+                    Buchti Company vous présente ses excuses pour la gêne occasionnée et vous remercie de votre compréhension.
+                </p>
+            </span>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a href="/">
+            <i class="ph-fill ph-house" style="color: var(--navicons-home); font-size: 24px;"></i>
+            <span>Home</span>
+        </a>
+        <a href="/work">
+            <i class="ph-bold ph-paint-brush" style="color: var(--navicons-color); font-size: 24px;"></i>
+            <span>Works</span>
+        </a>
+        <a id="theme-toggle" class="icon-only">
+            <i class="ph-bold ph-sun" id="icon-sun" style="color: var(--navicons-color); font-size: 24px;"></i>
+            <i class="ph-bold ph-moon" id="icon-moon" style="color: var(--navicons-color); font-size: 24px;"></i>
+        </a> <!-- Bouton icône seule -->
+    </div>
+
+    <!-- Scripts zone -->
+    <!-- Phosphor icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    <!-- Cursor custom -->
+    <script src="/js/cursor.js"></script>
+    <!-- Color scheme modifier -->
+    <script src="/js/scheme.js"></script>
+    <!-- Scripts zone -->
+
+</body>
+
+</html>

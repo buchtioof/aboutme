@@ -1,21 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
+    
+    // Variable for the toggle button and sun/moon icons
     const themeToggleButton = document.getElementById('theme-toggle');
     const iconSun = document.getElementById('icon-sun');
     const iconMoon = document.getElementById('icon-moon');
 
-    // Vérifier le thème stocké dans le localStorage
+    // Check the theme stored in localStorage
     const currentTheme = localStorage.getItem('theme');
     if (currentTheme) {
         document.documentElement.setAttribute('data-theme', currentTheme);
         updateIcons();
     } else {
-        // Définir le thème par défaut basé sur la préférence système
+        // Set default theme based on system preference
         const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
         document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
         updateIcons();
     }
 
-    // Fonction pour basculer le thème
+    // Function to toggle the theme
     themeToggleButton.addEventListener('click', () => {
         let theme = document.documentElement.getAttribute('data-theme');
         if (theme === 'dark') {
@@ -25,10 +27,10 @@ document.addEventListener('DOMContentLoaded', () => {
             document.documentElement.setAttribute('data-theme', 'dark');
             localStorage.setItem('theme', 'dark');
         }
-        updateIcons(); // Mettre à jour les icônes immédiatement
+        updateIcons(); // Update icons immediately
     });
 
-    // Fonction pour mettre à jour les icônes
+    // Function to update the icons
     function updateIcons() {
         const theme = document.documentElement.getAttribute('data-theme');
         if (theme === 'dark') {
