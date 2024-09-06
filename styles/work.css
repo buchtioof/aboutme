@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Instrument+Serif:regular,italic);
+@import url(https://fonts.googleapis.com/css?family=Sora:100,200,300,regular,500,600,700,800);
+@import url("/styles/library/scheme.css");
+
+/* CSS for index page */
+
+/* Reset and color page */
+
+body,
+h1,
+p,
+span {
+	padding: 0%;
+	margin: 0%;
+	left: 0px;
+	top: 0px;
+}
+
+body {
+	background: var(--background);
+	color: var(--monochrome);
+	transition: background 0.3s, color 0.3s; /* Pour une transition douce */
+}
+
+/* Content settings */
+
+h1 {
+	font-family: Instrument Serif;
+	font-style: normal;
+	font-weight: 200;
+	text-align: left;
+	font-size: 52px;
+	letter-spacing: 0;
+}
+
+p {
+	font-family: Instrument Serif;
+	font-style: italic;
+	font-weight: 400;
+	text-align: left;
+	font-size: 28px;
+}
+
+.p_link {
+	color: var(--monochrome);;
+	font-family: Instrument Serif;
+	font-style: italic;
+	font-weight: 400;
+	text-align: left;
+	font-size: 28px;
+	text-decoration: none;
+	transition: all .5s;
+}
+
+.p_link:hover {
+	text-decoration: underline;
+}
+
+/* Content styling */
+
+.container {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 30%;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 48px;
+}
+
+.hello {
+	position: relative;
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+	gap: 24px;
+}
+
+.world {
+	position: relative;
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	column-gap: 2%;
+	align-items: baseline;
+}
+
+/* Resize mini earth*/
+.globe_emoji {
+	width: 42px;
+	height: 42px;
+}
+
+.paragraph {
+	width: fit-content;
+	height: auto;
+}
