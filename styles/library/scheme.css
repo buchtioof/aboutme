@@ -12,7 +12,7 @@
 
     /* Nav colors */
     --navicons-home: #ff4848;
-    --navicons-work: #48c8ff;
+    --navicons-work: #ffb12a;
     --navicons-color: #454545;
 }
 
@@ -29,5 +29,7 @@
     --contact-color: #ff946d;
     
     /* Nav colors */
+    --navicons-home: #ff4848;
+    --navicons-work: #ffd359;
     --navicons-color: #d2d2d2;
 }
